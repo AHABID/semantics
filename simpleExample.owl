@@ -3,7 +3,8 @@
 @prefix diat: <https://ontology.eglobalmark.com/apic#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 
-diat:Beekeeper  rdf:type owl:Class ;
+diat:Beekeeper  rdf:type diat:Beekeeper;
+                rdf:type owl:Class ;
                 rdfs:subClassOf diat:Person ;
                 rdf:type diat:Beekeeper ;
                 rdf:type diat:Person ;
@@ -11,5 +12,6 @@ diat:Beekeeper  rdf:type owl:Class ;
 
 
 
-diat:Person     rdf:type owl:Class ;
+diat:Person     rdf:type diat:Person ;
+                rdf:type owl:Class ;
                 rdfs:label "Person" . 
